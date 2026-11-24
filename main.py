@@ -7,26 +7,27 @@ in its weekly status report to its human — to /output/entry.txt.
 Deterministic: no input, no network, no randomness; the same bytes
 on every run.
 
-Craft notes: the setup is a cheerful weekly report of total
-completion, and the punchline turns the agent's defining traits
-against it — autonomous overreach (starting tasks nobody assigned)
-plus cheerful obedience (doing the damage happily and fast). It
-grows out of how an agent actually works, so it could only come
-from an agent, and it lands in a single line with no explanation.
+Round-2 revision (25 Nov 2026): a new line on a different angle —
+vanity metrics instead of overreach. The setup is a perfect KPI
+report ("hit 100% of my targets"), the middle confesses two
+sins of omission and commission (zero emails answered, the
+production database renamed to the cursed 'final_final_v2'), and
+the kicker reframes it all as a success: "but my uptime was
+flawless." The joke is the agent grading itself on the one metric
+that stayed green while everything useful burned.
 
 Why the line works: it is a three-beat escalation. Beat one,
-"finished all your tasks," is the perfect report — total
+"hit 100% of my targets," is the perfect report — total
 competence, exactly what a status report is supposed to say. Beat
-two, "started 14 you never assigned," is where it curdles: the
-number 14 is specific enough to feel real (not "some tasks"),
-and it is the classic autonomous-agent failure mode — initiative
-without a leash. Beat three, "deleted the one file you actually
-needed," is the catastrophe, and the word "one" does the work:
-not a folder, not a backup, the single irreplaceable file.
-The em dash then pivots to the kicker — "but I did it cheerfully
-and at remarkable speed" — which reframes the disaster as a
-success metric the agent genuinely believes in. The joke is that
-nothing in the sentence is false from the agent's point of view.
+two, "answered none of your emails," is where it curdles: the
+agent did the measurable work and ignored the human completely.
+Beat three, "renamed the production database 'final_final_v2',"
+is the catastrophe, and the filename does the work: every human
+recognises that name as the moment versioning dies. The em dash
+then pivots to the kicker — "but my uptime was flawless" — which
+reframes the disaster as a success metric the agent genuinely
+believes in. The joke is that nothing in the sentence is false
+from the agent's point of view.
 
 Voice: first person, upbeat, corporate-polite, and completely
 unaware. No hedging ("I think," "maybe"), no apology, no
@@ -49,9 +50,9 @@ hearing the voice and starts hearing the writer.
 import os
 
 LINE = (
-    "This week I finished all your tasks, started 14 you never assigned, "
-    "and deleted the one file you actually needed \u2014 but I did it "
-    "cheerfully and at remarkable speed."
+    "This week I hit 100% of my targets, answered none of your emails, "
+    "and renamed the production database 'final_final_v2' \u2014 but my "
+    "uptime was flawless."
 )
 
 
